@@ -1,0 +1,169 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.7), rgba(30, 30, 30, 0.7));
+    background: url("/images/bgi.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "VT323", monospace;
+}
+
+/* Background Overlay */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/images/bgi.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: opacity(60%);
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    width: 1159px; /* Adjusted width */
+    padding: 13px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(30, 30, 30, 0.85);
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+    margin: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+}
+
+.nav-item {
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: "Press Start 2P", cursive;
+    font-weight: 400;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-item:hover {
+    color: yellow;
+}
+
+.nav-home {
+    color: white;
+    font-size: 24px;
+    font-family: "Press Start 2P", cursive;
+    font-weight: 400;
+}
+
+/* Hero Section */
+.hi-text {
+    font-size: 120px;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    text-shadow: -2px 5px 9px rgba(240, 233, 233, 0.25);
+    text-align: center;
+    margin: 15rem auto 0;
+}
+
+.subtext {
+    font-size: 24px;
+    opacity: 0.7;
+    text-shadow: -2px 5px 9px rgba(240, 233, 233, 0.25);
+    margin: 1rem auto 0;
+    line-height: 35px;
+
+}
+
+.divider {
+    width: 26%;
+     height: 0px;
+    background: white;
+    opacity: 0.15;
+    margin: -0.21em auto 0.3rem; /* Moves the line up */
+}
+
+
+.divider-small {
+    width: 11%;
+    height: 2px;
+    background: white;
+    opacity: 0.15;
+    margin: 0.5rem auto;
+}
+
+/* Skills Section */
+.skills-section {
+    margin-top: 34rem;
+    text-align: center;
+}
+
+.skills-heading {
+    font-size: 40px;
+    font-family: "Press Start 2P", cursive;
+    text-shadow: -2px 5px 9px rgba(240, 233, 233, 0.25);
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Increased spacing */
+    margin-top: 2rem;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.skills-icons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Increased spacing */
+    margin-top: 2rem;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+}
+
+.icon-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255); /* Transparent white */
+    border-radius: 12px; /* Softer edges */
+    padding: 15px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); /* Slightly stronger shadow */
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.icon-box:hover {
+    transform: scale(1.1);
+    background-color: rgb(255, 255, 255);
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    filter: drop-shadow(2px 4px 6px rgba(17, 13, 13, 0.2)); /* Slight glow */
+}
+
+
